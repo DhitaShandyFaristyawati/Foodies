@@ -23,7 +23,6 @@
 ![Image of F5](https://github.com/DhitaShandyFaristyawati/Foodies/blob/master/F5.png)
 
 ###Link File APK
-
 https://drive.google.com/drive/u/0/my-drive
 
 
