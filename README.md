@@ -25,7 +25,11 @@
 **Link File APK** https://drive.google.com/drive/u/0/my-drive
 
 **Nama  : Dhita Shandy Faristyawati**
+
 **Kelas : XII RPL 3**
+
 **Absen : 11**
+
 **NIS   : 4323/1221.063**
+
 **SMK Telkom Malang**
