@@ -1,6 +1,6 @@
 # Foodies - FOODIE BOOKIE
 
-**FOODIE BOOKIE** dapat memudahkan pembeli atau pemesan dalam memesan makanan tanpa perlu keluar rumah. Pembeli atau pemesan hanya mengisi nama, alamat, menu yang dipesan, memilih pengantar pesanan dan memilih cara pembayaran. Jika Pembeli atau pemesan tidak mencantumkan nama akan muncul deteksi error yang artinya nama harus diisi. Begitu juga dengan alamat, ketika alamat tidak diisi maka akan muncul deteksi error yang artinya alamat juga harus diisi.
+> **FOODIE BOOKIE** dapat memudahkan pembeli atau pemesan dalam memesan makanan tanpa perlu keluar rumah. Pembeli atau pemesan hanya mengisi nama, alamat, menu yang dipesan, memilih pengantar pesanan dan memilih cara pembayaran. Jika Pembeli atau pemesan tidak mencantumkan nama akan muncul deteksi error yang artinya nama harus diisi. Begitu juga dengan alamat, ketika alamat tidak diisi maka akan muncul deteksi error yang artinya alamat juga harus diisi.
 
 ###Tampilan Awal Foodie Bookie:
 
