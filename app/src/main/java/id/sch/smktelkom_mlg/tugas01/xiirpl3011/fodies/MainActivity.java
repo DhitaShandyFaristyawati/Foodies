@@ -4,12 +4,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     EditText Nama, Alamat;
+    CheckBox Soto, Rendang, Pecel, Sate, Padang;
 
     Button bOK;
     TextView tvHasil;
@@ -21,6 +23,12 @@ public class MainActivity extends AppCompatActivity {
 
         Nama = (EditText) findViewById(R.id.editTextNama);
         Alamat = (EditText) findViewById(R.id.editTextAlamat);
+
+        Soto = (CheckBox) findViewById(R.id.checkBoxSoto);
+        Rendang = (CheckBox) findViewById(R.id.checkBoxRendang);
+        Pecel = (CheckBox) findViewById(R.id.checkBoxPecel);
+        Sate = (CheckBox) findViewById(R.id.checkBoxSate);
+        Padang = (CheckBox) findViewById(R.id.checkBoxPadang);
 
         bOK = (Button) findViewById(R.id.buttonOK);
         tvHasil = (TextView) findViewById(R.id.textViewHasil);
@@ -50,7 +58,14 @@ public class MainActivity extends AppCompatActivity {
             String nama = Nama.getText().toString();
             String alamat = Alamat.getText().toString();
 
-            tvHasil.setText(" Nama Pemesan : " + nama + "\n Beralamat di : " + alamat);
+            String hasil2 = "";
+            if (Soto.isChecked()) hasil2 += Soto.getText() + " , ";
+            if (Rendang.isChecked()) hasil2 += Rendang.getText() + " , ";
+            if (Pecel.isChecked()) hasil2 += Pecel.getText() + " , ";
+            if (Sate.isChecked()) hasil2 += Sate.getText() + " , ";
+            if (Padang.isChecked()) hasil2 += Padang.getText() + " , ";
+
+            tvHasil.setText(" Nama Pemesan : " + nama + "\n Beralamat di : " + alamat + "\n Memesan : " + hasil2);
         }
 
 

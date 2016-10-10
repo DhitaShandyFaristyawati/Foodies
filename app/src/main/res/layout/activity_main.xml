@@ -45,6 +45,49 @@
         android:hint="   Alamat Pemesan"
         android:textStyle="italic" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Makanan :"
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Soto" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRendang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Rendang" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPecel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Pecel" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Sate" />
+
+    <CheckBox
+        android:id="@+id/checkBoxPadang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Nasi Padang" />
+
     <Button
         android:id="@+id/buttonOK"
         android:layout_width="wrap_content"
