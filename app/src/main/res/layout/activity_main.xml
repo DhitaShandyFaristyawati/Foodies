@@ -122,6 +122,20 @@
             android:text="Uber" />
     </RadioGroup>
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pembayaran :"
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic" />
+
+    <Spinner
+        android:id="@+id/spinnerPaket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/Paket" />
+
     <Button
         android:id="@+id/buttonOK"
         android:layout_width="wrap_content"
