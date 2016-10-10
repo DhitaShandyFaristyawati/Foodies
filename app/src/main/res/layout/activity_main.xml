@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.sch.smktelkom_mlg.tugas01.xiirpl3011.fodies.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="FOODIE BOOKIE"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/truk" />
+
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="   Nama Pemesan"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button"
+        android:text="Pesan Sekarang"
+        android:textColor="@android:color/holo_green_light" />
+
+    <TextView
+        android:id="@+id/textViewHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        tools:text="Hasil" />
+</LinearLayout>
