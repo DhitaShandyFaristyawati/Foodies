@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     EditText Nama, Alamat;
     CheckBox Soto, Rendang, Pecel, Sate, Padang;
     RadioButton Go, Grab, Uber;
+    Spinner Paket;
 
     Button bOK;
     TextView tvHasil;
@@ -35,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         Go = (RadioButton) findViewById(R.id.radioButtonGo);
         Grab = (RadioButton) findViewById(R.id.radioButtonGrab);
         Uber = (RadioButton) findViewById(R.id.radioButtonUber);
+
+        Paket = (Spinner) findViewById(R.id.spinnerPaket);
 
         bOK = (Button) findViewById(R.id.buttonOK);
         tvHasil = (TextView) findViewById(R.id.textViewHasil);
@@ -80,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                 hasil = Uber.getText().toString();
             }
 
-            tvHasil.setText(" Nama Pemesan : " + nama + "\n Beralamat di : " + alamat + "\n Memesan : " + hasil2 + "\n Dikirim dengan : " + hasil);
+            tvHasil.setText(" Nama Pemesan : " + nama + "\n Beralamat di : " + alamat + "\n Memesan : " + hasil2 + "\n Dikirim dengan : " + hasil + "\n Membayar Secara : " + Paket.getSelectedItem().toString());
         }
 
 
