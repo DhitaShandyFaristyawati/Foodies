@@ -88,6 +88,40 @@
         android:checked="false"
         android:text="Nasi Padang" />
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kirim Menggunakan : "
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Gojek" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGrab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Grab" />
+
+        <RadioButton
+            android:id="@+id/radioButtonUber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Uber" />
+    </RadioGroup>
+
     <Button
         android:id="@+id/buttonOK"
         android:layout_width="wrap_content"

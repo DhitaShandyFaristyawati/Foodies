@@ -6,12 +6,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     EditText Nama, Alamat;
     CheckBox Soto, Rendang, Pecel, Sate, Padang;
+    RadioButton Go, Grab, Uber;
 
     Button bOK;
     TextView tvHasil;
@@ -29,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
         Pecel = (CheckBox) findViewById(R.id.checkBoxPecel);
         Sate = (CheckBox) findViewById(R.id.checkBoxSate);
         Padang = (CheckBox) findViewById(R.id.checkBoxPadang);
+
+        Go = (RadioButton) findViewById(R.id.radioButtonGo);
+        Grab = (RadioButton) findViewById(R.id.radioButtonGrab);
+        Uber = (RadioButton) findViewById(R.id.radioButtonUber);
 
         bOK = (Button) findViewById(R.id.buttonOK);
         tvHasil = (TextView) findViewById(R.id.textViewHasil);
@@ -65,7 +71,16 @@ public class MainActivity extends AppCompatActivity {
             if (Sate.isChecked()) hasil2 += Sate.getText() + " , ";
             if (Padang.isChecked()) hasil2 += Padang.getText() + " , ";
 
-            tvHasil.setText(" Nama Pemesan : " + nama + "\n Beralamat di : " + alamat + "\n Memesan : " + hasil2);
+            String hasil = null;
+            if (Go.isChecked()) {
+                hasil = Go.getText().toString();
+            } else if (Grab.isChecked()) {
+                hasil = Grab.getText().toString();
+            } else if (Uber.isChecked()) {
+                hasil = Uber.getText().toString();
+            }
+
+            tvHasil.setText(" Nama Pemesan : " + nama + "\n Beralamat di : " + alamat + "\n Memesan : " + hasil2 + "\n Dikirim dengan : " + hasil);
         }
 
 
