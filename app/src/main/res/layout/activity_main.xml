@@ -38,6 +38,13 @@
         android:hint="   Nama Pemesan"
         android:textStyle="italic" />
 
+    <EditText
+        android:id="@+id/editTextAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="   Alamat Pemesan"
+        android:textStyle="italic" />
+
     <Button
         android:id="@+id/buttonOK"
         android:layout_width="wrap_content"

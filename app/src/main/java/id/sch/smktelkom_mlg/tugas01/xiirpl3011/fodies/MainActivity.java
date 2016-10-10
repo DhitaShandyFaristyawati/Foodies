@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText Nama;
+    EditText Nama, Alamat;
 
     Button bOK;
     TextView tvHasil;
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Nama = (EditText) findViewById(R.id.editTextNama);
+        Alamat = (EditText) findViewById(R.id.editTextAlamat);
 
         bOK = (Button) findViewById(R.id.buttonOK);
         tvHasil = (TextView) findViewById(R.id.textViewHasil);
@@ -47,8 +48,9 @@ public class MainActivity extends AppCompatActivity {
 
         if (isValid()) {
             String nama = Nama.getText().toString();
+            String alamat = Alamat.getText().toString();
 
-            tvHasil.setText(" Nama Pemesan : " + nama);
+            tvHasil.setText(" Nama Pemesan : " + nama + "\n Beralamat di : " + alamat);
         }
 
 
@@ -58,10 +60,18 @@ public class MainActivity extends AppCompatActivity {
         boolean valid = true;
 
         String nama = Nama.getText().toString();
+        String alamat = Alamat.getText().toString();
+
         if (nama.isEmpty()) {
             Nama.setError("Nama Harus Diisi");
         } else {
             Nama.setError(null);
+        }
+
+        if (alamat.isEmpty()) {
+            Alamat.setError("Alamat Tidak Boleh Kosong");
+        } else {
+            Alamat.setError(null);
         }
 
         return valid;
